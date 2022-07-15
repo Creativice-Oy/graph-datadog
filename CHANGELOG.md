@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Ingest new entity `datadog_host`
+- Build new relationship `datadog_account_has_host`
+- Updated `iterateApi` to handle both V1 and V2 of Datadog API Client
+
 ## 2.0.0 - 2022-08-17
 
 ### Added

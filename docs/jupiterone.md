@@ -2,13 +2,13 @@
 
 ## Datadog + JupiterOne Integration Benefits
 
-- Visualize Datadog services, teams, and users in the JupiterOne graph.
+- Visualize Datadog services, hosts, teams, and users in the JupiterOne graph.
 - Map Datadog users to employees in your JupiterOne account.
 - Monitor changes to Datadog users using JupiterOne alerts.
 
 ## How it Works
 
-- JupiterOne periodically fetches services, teams, and users from Datadog to
+- JupiterOne periodically fetches services, hosts, teams, and users from Datadog to
   update the graph.
 - Write JupiterOne queries to review and monitor updates to the graph, or
   leverage existing queries.

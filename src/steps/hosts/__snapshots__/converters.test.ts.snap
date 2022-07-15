@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#createHostEntity should convert to entity 1`] = `
+Object {
+  "_class": Array [
+    "Host",
+  ],
+  "_key": "datadog_host:6264691456",
+  "_rawData": Array [
+    Object {
+      "name": "default",
+      "rawData": Object {
+        "aliases": Array [
+          "Dhaiwats-MacBook-Air.local",
+        ],
+        "apps": Array [
+          "ntp",
+          "agent",
+        ],
+        "hostName": "Dhaiwats-MacBook-Air.local",
+        "id": 6264691456,
+        "isMuted": false,
+        "lastReportedTime": 1657376703,
+        "metrics": Object {
+          "cpu": 5.1627164,
+          "iowait": 0,
+          "load": 0.1438288,
+        },
+        "muteTimeout": undefined,
+        "name": "Dhaiwats-MacBook-Air.local",
+        "sources": Array [
+          "agent",
+        ],
+        "tagsBySource": Object {
+          "Datadog": Array [
+            "host:Dhaiwats-MacBook-Air.local",
+          ],
+        },
+        "up": true,
+      },
+    },
+  ],
+  "_type": "datadog_host",
+  "aliases": Array [
+    "Dhaiwats-MacBook-Air.local",
+  ],
+  "apps": Array [
+    "ntp",
+    "agent",
+  ],
+  "awsName": undefined,
+  "createdOn": undefined,
+  "displayName": "Dhaiwats-MacBook-Air.local",
+  "hostname": "Dhaiwats-MacBook-Air.local",
+  "id": "6264691456",
+  "isMuted": false,
+  "lastReportedTime": 1657376703,
+  "muteTimeout": undefined,
+  "name": "Dhaiwats-MacBook-Air.local",
+  "sources": Array [
+    "agent",
+  ],
+  "state": "running",
+}
+`;

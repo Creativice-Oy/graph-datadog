@@ -8,6 +8,7 @@ import { client, v1, v2 } from '@datadog/datadog-api-client';
 import { retry } from '@lifeomic/attempt';
 
 import { IntegrationConfig } from './config';
+import { Host } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1/models/Host';
 export type ResourceIteratee<T> = (each: T) => Promise<void> | void;
 
 export class APIClient {
@@ -31,6 +32,7 @@ export class APIClient {
     client: K,
     fnName: string,
     callback: (result: T[]) => Promise<void>,
+    resParam: string,
     opts?: any,
   ) {
     let pageNumber = 0,
@@ -61,8 +63,8 @@ export class APIClient {
           },
         );
 
-        if (res.data) {
-          await callback(res.data);
+        if (res[resParam]) {
+          await callback(res[resParam]);
         }
 
         totalCount = res.meta?.page?.totalCount || 0;
@@ -111,6 +113,7 @@ export class APIClient {
           await iteratee(user);
         }
       },
+      'data',
     );
   }
 
@@ -147,6 +150,7 @@ export class APIClient {
           await iteratee(role);
         }
       },
+      'data',
     );
   }
 
@@ -169,6 +173,7 @@ export class APIClient {
           await iteratee(user);
         }
       },
+      'data',
       { roleId },
     );
   }
@@ -181,6 +186,28 @@ export class APIClient {
     return apiInstance.getOrg({
       publicId,
     });
+  }
+
+  /**
+   * Iterates each user resource for a given role in the provider.
+   *
+   * @param iteratee receives each user for a given role to produce entities/relationships
+   */
+  public async iterateHosts(
+    iteratee: ResourceIteratee<Host>,
+  ): Promise<void> {
+    const apiInstance = new v1.HostsApi(this.configuration);
+
+    await this.iterateApi<Host, v1.HostsApi>(
+      apiInstance,
+      'listHosts',
+      async (hosts) => {
+        for (const host of hosts) {
+          await iteratee(host);
+        }
+      },
+      'hostList',
+    );
   }
 }
 

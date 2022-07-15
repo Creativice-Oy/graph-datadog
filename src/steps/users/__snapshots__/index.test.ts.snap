@@ -7,19 +7,32 @@ Object {
       "_class": Array [
         "Account",
       ],
-      "_key": "datadog_account:local-integration",
+      "_key": "datadog_account:viragsf@gmail.com",
       "_rawData": Array [
         Object {
           "name": "default",
-          "rawData": Object {
-            "name": "Local Integration",
+          "rawData": User {
+            "accessRole": "adm",
+            "disabled": false,
+            "email": "viragsf@gmail.com",
+            "handle": "viragsf@gmail.com",
+            "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+            "name": null,
+            "verified": true,
           },
         },
       ],
       "_type": "datadog_account",
+      "accessRole": "adm",
       "createdOn": undefined,
-      "displayName": "Local Integration",
-      "name": "Local Integration",
+      "disabled": false,
+      "displayName": "viragsf@gmail.com",
+      "email": "viragsf@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+      "id": "viragsf@gmail.com",
+      "name": "viragsf@gmail.com",
+      "username": "viragsf@gmail.com",
+      "verified": true,
     },
     Object {
       "_class": Array [
@@ -196,24 +209,24 @@ Object {
   "collectedRelationships": Array [
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:local-integration",
-      "_key": "datadog_account:local-integration|has|datadog_user:development@jupiterone.dev",
+      "_fromEntityKey": "datadog_account:viragsf@gmail.com",
+      "_key": "datadog_account:viragsf@gmail.com|has|datadog_user:development@jupiterone.dev",
       "_toEntityKey": "datadog_user:development@jupiterone.dev",
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:local-integration",
-      "_key": "datadog_account:local-integration|has|datadog_user:stefan@creativice.com",
+      "_fromEntityKey": "datadog_account:viragsf@gmail.com",
+      "_key": "datadog_account:viragsf@gmail.com|has|datadog_user:stefan@creativice.com",
       "_toEntityKey": "datadog_user:stefan@creativice.com",
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:local-integration",
-      "_key": "datadog_account:local-integration|has|datadog_user:viragsf@gmail.com",
+      "_fromEntityKey": "datadog_account:viragsf@gmail.com",
+      "_key": "datadog_account:viragsf@gmail.com|has|datadog_user:viragsf@gmail.com",
       "_toEntityKey": "datadog_user:viragsf@gmail.com",
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
@@ -431,6 +444,10 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
+                    "id": "5e605652-dd12-11e8-9e53-375565b8970e",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
                     "id": "62cc036c-dd12-11e8-9e54-db9995643092",
                     "type": "permissions",
                   },
@@ -439,7 +456,15 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
+                    "id": "7d7c98ac-dd12-11e8-9e56-93700598622d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
                     "id": "811ac4ca-dd12-11e8-9e57-676a7f0beef9",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "84aa3ae4-dd12-11e8-9e58-a373a514ccd0",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -647,6 +672,10 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
+                    "id": "7df222b6-a45c-11eb-a0af-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
                     "id": "98b984f4-b16d-11eb-a2c6-da7ad0900002",
                     "type": "permissions",
                   },
@@ -704,6 +733,50 @@ Object {
                   },
                   RelationshipToPermissionData {
                     "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "945b3bb4-5884-11ec-aa6d-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "945b3bb5-5884-11ec-aa6d-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "b6bf9ac6-9a59-11ec-8480-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "b6bf9ac7-9a59-11ec-8480-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "2108215e-b9b4-11ec-958e-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "1afff448-d5e9-11ec-ae37-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "1afff449-d5e9-11ec-ae37-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6c87d3da-e5c5-11ec-b1d6-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "f8e941cf-e746-11ec-b22d-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "f8e941d0-e746-11ec-b22d-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "f8e941ce-e746-11ec-b22d-da7ad0900002",
                     "type": "permissions",
                   },
                 ],
@@ -817,6 +890,18 @@ Object {
                     "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
                     "type": "permissions",
                   },
+                  RelationshipToPermissionData {
+                    "id": "945b3bb4-5884-11ec-aa6d-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "b6bf9ac6-9a59-11ec-8480-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "f8e941cf-e746-11ec-b22d-da7ad0900002",
+                    "type": "permissions",
+                  },
                 ],
               },
             },
@@ -857,6 +942,10 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
+                    "id": "5e605652-dd12-11e8-9e53-375565b8970e",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
                     "id": "62cc036c-dd12-11e8-9e54-db9995643092",
                     "type": "permissions",
                   },
@@ -865,7 +954,15 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
+                    "id": "7d7c98ac-dd12-11e8-9e56-93700598622d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
                     "id": "811ac4ca-dd12-11e8-9e57-676a7f0beef9",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "84aa3ae4-dd12-11e8-9e58-a373a514ccd0",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -1052,6 +1149,34 @@ Object {
                     "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
                     "type": "permissions",
                   },
+                  RelationshipToPermissionData {
+                    "id": "945b3bb4-5884-11ec-aa6d-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "b6bf9ac6-9a59-11ec-8480-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "b6bf9ac7-9a59-11ec-8480-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "2108215e-b9b4-11ec-958e-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "f8e941cf-e746-11ec-b22d-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "f8e941d0-e746-11ec-b22d-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "f8e941ce-e746-11ec-b22d-da7ad0900002",
+                    "type": "permissions",
+                  },
                 ],
               },
             },
@@ -1169,6 +1294,62 @@ Object {
       "_class": Array [
         "User",
       ],
+      "_key": "datadog_user:stefan@creativice.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2021-12-28T13:48:08.440Z,
+              "disabled": false,
+              "email": "stefan@creativice.com",
+              "handle": "stefan@creativice.com",
+              "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
+              "modifiedAt": 2021-12-28T13:50:45.873Z,
+              "name": null,
+              "serviceAccount": false,
+              "status": "Active",
+              "title": null,
+              "verified": true,
+            },
+            "id": "ca36998a-67e4-11ec-b129-da7ad0900002",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "createdOn": undefined,
+      "disabled": false,
+      "displayName": "stefan@creativice.com",
+      "email": "stefan@creativice.com",
+      "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
+      "id": "stefan@creativice.com",
+      "name": "stefan@creativice.com",
+      "username": "stefan@creativice.com",
+      "verified": true,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
       "_key": "datadog_user:viragsf@gmail.com",
       "_rawData": Array [
         Object {
@@ -1227,7 +1408,7 @@ Object {
   "encounteredTypes": Array [
     "datadog_user",
   ],
-  "numCollectedEntities": 2,
+  "numCollectedEntities": 3,
   "numCollectedRelationships": 0,
 }
 `;

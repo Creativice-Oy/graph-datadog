@@ -1,3 +1,4 @@
+import { Host } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1/models/Host';
 import { Role } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/Role';
 import { User as User_v2 } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/User';
 import { Organization } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1';
@@ -32,6 +33,38 @@ export function getMockAccount(): Partial<Organization> {
       type: 'pro',
     },
   };
+}
+
+export function getMockHost(): Partial<Host> {
+  return {
+    lastReportedTime: 1657376703,
+    name: "Dhaiwats-MacBook-Air.local",
+    isMuted: false,
+    muteTimeout: undefined,
+    apps: [
+        "ntp",
+        "agent"
+    ],
+    tagsBySource: {
+        Datadog: [
+            "host:Dhaiwats-MacBook-Air.local"
+        ]
+    },
+    up: true,
+    metrics: {
+        load: 0.1438288,
+        iowait: 0,
+        cpu: 5.1627164
+    },
+    sources: [
+        "agent"
+    ],
+    hostName: "Dhaiwats-MacBook-Air.local",
+    id: 6264691456,
+    aliases: [
+        "Dhaiwats-MacBook-Air.local"
+    ]
+  }
 }
 
 export function getMockRole(): Partial<Role> {
