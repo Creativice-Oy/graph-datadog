@@ -1,7 +1,9 @@
 import {
+  createDirectRelationship,
   Entity,
   IntegrationStep,
   IntegrationStepExecutionContext,
+  RelationshipClass,
 } from '@jupiterone/integration-sdk-core';
 import { createAPIClient } from '../../client';
 import { IntegrationConfig } from '../../config';
@@ -11,9 +13,7 @@ import {
   Relationships,
   Steps,
 } from '../constants';
-import {
-  createAccountHostRelationship,
-  createHostEntity } from './converters';
+import { createAccountHostRelationship, createHostEntity } from './converters';
 
 export async function fetchHosts({
   instance,
@@ -30,7 +30,11 @@ export async function fetchHosts({
     if (hostEntity) {
       await jobState.addEntity(hostEntity);
 
-      createAccountHostRelationship(accountEntity, hostEntity);
+      await createDirectRelationship({
+        _class: RelationshipClass.HAS,
+        from: accountEntity,
+        to: hostEntity,
+      });
     }
   });
 }

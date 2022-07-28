@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#fetchHosts should collect data 1`] = `
+Object {
+  "collectedEntities": Array [
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_account:viragsf@gmail.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "accessRole": "adm",
+            "disabled": false,
+            "email": "viragsf@gmail.com",
+            "handle": "viragsf@gmail.com",
+            "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+            "name": null,
+            "verified": true,
+          },
+        },
+      ],
+      "_type": "datadog_account",
+      "accessRole": "adm",
+      "createdOn": undefined,
+      "disabled": false,
+      "displayName": "viragsf@gmail.com",
+      "email": "viragsf@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+      "id": "viragsf@gmail.com",
+      "name": "viragsf@gmail.com",
+      "username": "viragsf@gmail.com",
+      "verified": true,
+    },
+    Object {
+      "_class": Array [
+        "Host",
+      ],
+      "_key": "datadog_host:6264691456",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": Host {
+            "aliases": Array [
+              "Dhaiwats-MacBook-Air.local",
+            ],
+            "apps": Array [
+              "agent",
+              "ntp",
+            ],
+            "awsName": undefined,
+            "hostName": "Dhaiwats-MacBook-Air.local",
+            "id": 6264691456,
+            "isMuted": false,
+            "lastReportedTime": 1659002873,
+            "meta": HostMeta {
+              "nixV": Array [
+                null,
+                null,
+                null,
+              ],
+            },
+            "metrics": HostMetrics {
+              "cpu": 18.309275,
+              "iowait": 0,
+              "load": 0.4601172,
+            },
+            "muteTimeout": null,
+            "name": "Dhaiwats-MacBook-Air.local",
+            "sources": Array [
+              "agent",
+            ],
+            "tagsBySource": Object {
+              "Datadog": Array [
+                "host:Dhaiwats-MacBook-Air.local",
+              ],
+            },
+            "up": true,
+          },
+        },
+      ],
+      "_type": "datadog_host",
+      "aliases": Array [
+        "Dhaiwats-MacBook-Air.local",
+      ],
+      "apps": Array [
+        "agent",
+        "ntp",
+      ],
+      "awsName": undefined,
+      "createdOn": undefined,
+      "displayName": "Dhaiwats-MacBook-Air.local",
+      "hostname": "Dhaiwats-MacBook-Air.local",
+      "id": "6264691456",
+      "isMuted": false,
+      "lastReportedTime": 1659002873,
+      "name": "Dhaiwats-MacBook-Air.local",
+      "sources": Array [
+        "agent",
+      ],
+      "state": "running",
+    },
+  ],
+  "collectedRelationships": Array [],
+  "encounteredTypes": Array [
+    "datadog_account",
+    "datadog_host",
+  ],
+  "numCollectedEntities": 2,
+  "numCollectedRelationships": 0,
+}
+`;

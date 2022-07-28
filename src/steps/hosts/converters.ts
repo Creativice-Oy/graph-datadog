@@ -1,11 +1,8 @@
 import { Host } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1/models/Host';
 import {
-  createDirectRelationship,
   createIntegrationEntity,
   Entity,
   parseTimePropertyValue,
-  Relationship,
-  RelationshipClass,
 } from '@jupiterone/integration-sdk-core';
 
 import { Entities } from '../constants';
@@ -29,26 +26,10 @@ export function createHostEntity(host: Host): Entity | null {
         hostname: host.hostName,
         isMuted: host.isMuted,
         lastReportedTime: parseTimePropertyValue(host.lastReportedTime),
-        muteTimeout: host.muteTimeout,
         name: host.name,
         sources: host.sources,
-        state:
-          host.up
-          ? 'running'
-          : 'stopped',
+        state: host.up ? 'running' : 'stopped',
       },
     },
   });
 }
-
-export function createAccountHostRelationship(
-  account: Entity,
-  host: Entity,
-): Relationship {
-  return createDirectRelationship({
-    _class: RelationshipClass.HAS,
-    from: account,
-    to: host,
-  });
-}
-

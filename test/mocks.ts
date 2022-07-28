@@ -38,33 +38,23 @@ export function getMockAccount(): Partial<Organization> {
 export function getMockHost(): Partial<Host> {
   return {
     lastReportedTime: 1657376703,
-    name: "Dhaiwats-MacBook-Air.local",
+    name: 'Dhaiwats-MacBook-Air.local',
     isMuted: false,
-    muteTimeout: undefined,
-    apps: [
-        "ntp",
-        "agent"
-    ],
+    apps: ['ntp', 'agent'],
     tagsBySource: {
-        Datadog: [
-            "host:Dhaiwats-MacBook-Air.local"
-        ]
+      Datadog: ['host:Dhaiwats-MacBook-Air.local'],
     },
     up: true,
     metrics: {
-        load: 0.1438288,
-        iowait: 0,
-        cpu: 5.1627164
+      load: 0.1438288,
+      iowait: 0,
+      cpu: 5.1627164,
     },
-    sources: [
-        "agent"
-    ],
-    hostName: "Dhaiwats-MacBook-Air.local",
+    sources: ['agent'],
+    hostName: 'Dhaiwats-MacBook-Air.local',
     id: 6264691456,
-    aliases: [
-        "Dhaiwats-MacBook-Air.local"
-    ]
-  }
+    aliases: ['Dhaiwats-MacBook-Air.local'],
+  };
 }
 
 export function getMockRole(): Partial<Role> {

@@ -26,7 +26,6 @@ Object {
           "iowait": 0,
           "load": 0.1438288,
         },
-        "muteTimeout": undefined,
         "name": "Dhaiwats-MacBook-Air.local",
         "sources": Array [
           "agent",
@@ -55,7 +54,6 @@ Object {
   "id": "6264691456",
   "isMuted": false,
   "lastReportedTime": 1657376703,
-  "muteTimeout": undefined,
   "name": "Dhaiwats-MacBook-Air.local",
   "sources": Array [
     "agent",

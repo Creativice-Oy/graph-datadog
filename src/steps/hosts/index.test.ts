@@ -2,9 +2,7 @@ import {
   createMockStepExecutionContext,
   Recording,
 } from '@jupiterone/integration-sdk-testing';
-import {
-  fetchHosts,
-} from '.';
+import { fetchHosts } from '.';
 import { integrationConfig } from '../../../test/config';
 import { setupDatadogRecording } from '../../../test/recording';
 import { IntegrationConfig } from '../../config';
@@ -67,22 +65,24 @@ describe('#fetchHosts', () => {
           id: { type: 'string' },
           aliases: {
             type: 'array',
-            items: { type: 'string' }
+            items: { type: 'string' },
           },
           apps: {
             type: 'array',
-            items: { type: 'string' }
+            items: { type: 'string' },
           },
           awsName: { type: 'string' },
           hostname: { type: 'string' },
           isMuted: { type: 'boolean' },
           lastReportedTime: { type: 'number' },
-          muteTimeout: { type: 'number' },
           name: { type: 'string' },
-          sources: { type: 'number' },
+          sources: {
+            type: 'array',
+            items: { type: 'string' },
+          },
           icon: {
             type: 'array',
-            items: { type: 'string' }
+            items: { type: 'string' },
           },
           state: { type: 'string' },
         },
