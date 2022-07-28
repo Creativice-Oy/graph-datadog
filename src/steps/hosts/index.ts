@@ -13,7 +13,7 @@ import {
   Relationships,
   Steps,
 } from '../constants';
-import { createAccountHostRelationship, createHostEntity } from './converters';
+import { createHostEntity } from './converters';
 
 export async function fetchHosts({
   instance,
@@ -30,11 +30,13 @@ export async function fetchHosts({
     if (hostEntity) {
       await jobState.addEntity(hostEntity);
 
-      await createDirectRelationship({
-        _class: RelationshipClass.HAS,
-        from: accountEntity,
-        to: hostEntity,
-      });
+      await jobState.addRelationship(
+        createDirectRelationship({
+          _class: RelationshipClass.HAS,
+          from: accountEntity,
+          to: hostEntity,
+        }),
+      );
     }
   });
 }
