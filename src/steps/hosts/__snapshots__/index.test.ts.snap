@@ -47,14 +47,14 @@ Object {
               "Dhaiwats-MacBook-Air.local",
             ],
             "apps": Array [
-              "agent",
               "ntp",
+              "agent",
             ],
             "awsName": undefined,
             "hostName": "Dhaiwats-MacBook-Air.local",
             "id": 6264691456,
             "isMuted": false,
-            "lastReportedTime": 1659002873,
+            "lastReportedTime": 1660563750,
             "meta": HostMeta {
               "nixV": Array [
                 null,
@@ -63,9 +63,9 @@ Object {
               ],
             },
             "metrics": HostMetrics {
-              "cpu": 18.309275,
-              "iowait": 0,
-              "load": 0.4601172,
+              "cpu": null,
+              "iowait": null,
+              "load": null,
             },
             "muteTimeout": null,
             "name": "Dhaiwats-MacBook-Air.local",
@@ -86,8 +86,8 @@ Object {
         "Dhaiwats-MacBook-Air.local",
       ],
       "apps": Array [
-        "agent",
         "ntp",
+        "agent",
       ],
       "awsName": undefined,
       "createdOn": undefined,
@@ -95,7 +95,7 @@ Object {
       "hostname": "Dhaiwats-MacBook-Air.local",
       "id": "6264691456",
       "isMuted": false,
-      "lastReportedTime": 1659002873,
+      "lastReportedTime": 1660563750,
       "name": "Dhaiwats-MacBook-Air.local",
       "sources": Array [
         "agent",
@@ -103,12 +103,22 @@ Object {
       "state": "running",
     },
   ],
-  "collectedRelationships": Array [],
+  "collectedRelationships": Array [
+    Object {
+      "_class": "HAS",
+      "_fromEntityKey": "datadog_account:viragsf@gmail.com",
+      "_key": "datadog_account:viragsf@gmail.com|has|datadog_host:6264691456",
+      "_toEntityKey": "datadog_host:6264691456",
+      "_type": "datadog_account_has_host",
+      "displayName": "HAS",
+    },
+  ],
   "encounteredTypes": Array [
     "datadog_account",
     "datadog_host",
+    "datadog_account_has_host",
   ],
   "numCollectedEntities": 2,
-  "numCollectedRelationships": 0,
+  "numCollectedRelationships": 1,
 }
 `;
