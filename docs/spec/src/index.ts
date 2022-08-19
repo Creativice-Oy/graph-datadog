@@ -7,10 +7,5 @@ import { roleSpec } from './role';
 import { userSpec } from './user';
 
 export const invocationConfig: IntegrationSpecConfig<IntegrationConfig> = {
-  integrationSteps: [
-    ...userSpec,
-    ...accountSpec,
-    ...roleSpec,
-    ...hostSpec,
-  ],
+  integrationSteps: [...userSpec, ...accountSpec, ...roleSpec, ...hostSpec],
 };

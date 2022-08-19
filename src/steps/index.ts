@@ -7,7 +7,7 @@ const integrationSteps = [
   ...userSteps,
   ...accountSteps,
   ...hostSteps,
-  ...roleSteps
+  ...roleSteps,
 ];
 
 export { integrationSteps };

@@ -5,6 +5,7 @@ import {
   IntegrationStepExecutionContext,
   RelationshipClass,
 } from '@jupiterone/integration-sdk-core';
+
 import { createAPIClient } from '../../client';
 import { IntegrationConfig } from '../../config';
 import {
@@ -26,18 +27,15 @@ export async function fetchHosts({
   const apiClient = createAPIClient(instance.config);
 
   await apiClient.iterateHosts(async (host) => {
-    const hostEntity = createHostEntity(host);
-    if (hostEntity) {
-      await jobState.addEntity(hostEntity);
+    const hostEntity = await jobState.addEntity(createHostEntity(host));
 
-      await jobState.addRelationship(
-        createDirectRelationship({
-          _class: RelationshipClass.HAS,
-          from: accountEntity,
-          to: hostEntity,
-        }),
-      );
-    }
+    await jobState.addRelationship(
+      createDirectRelationship({
+        _class: RelationshipClass.HAS,
+        from: accountEntity,
+        to: hostEntity,
+      }),
+    );
   });
 }
 

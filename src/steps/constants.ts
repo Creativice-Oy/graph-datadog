@@ -17,10 +17,7 @@ export const Steps = {
 };
 
 export const Entities: Record<
-  | 'HOST'
-  | 'USER'
-  | 'ACCOUNT'
-  | 'ROLE',
+  'HOST' | 'USER' | 'ACCOUNT' | 'ROLE',
   StepEntityMetadata> =
   {
     HOST: {

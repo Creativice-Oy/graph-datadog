@@ -7,25 +7,25 @@ import {
 
 import { Entities } from '../constants';
 
-export function getHostKey(id: string): string {
+export function getHostKey(id: number): string {
   return `datadog_host:${id}`;
 }
 
-export function createHostEntity(host: Host): Entity | null {
+export function createHostEntity(host: Host): Entity {
   return createIntegrationEntity({
     entityData: {
       source: host,
       assign: {
         _type: Entities.HOST._type,
         _class: Entities.HOST._class,
-        _key: getHostKey(host.id as unknown as string),
+        _key: getHostKey(host.id!),
         id: `${host.id}`,
         aliases: host.aliases,
         apps: host.apps,
         awsName: host.awsName,
         hostname: host.hostName,
         isMuted: host.isMuted,
-        lastReportedTime: parseTimePropertyValue(host.lastReportedTime),
+        reportedOn: parseTimePropertyValue(host.lastReportedTime),
         name: host.name,
         sources: host.sources,
         state: host.up ? 'running' : 'stopped',
